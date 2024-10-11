@@ -1,7 +1,46 @@
 // Obtener usuarios desde localStorage o usar los usuarios iniciales
 const obtenerUsuarios = () => {
     const usuariosGuardados = localStorage.getItem('usuarios');
-    return usuariosGuardados ? JSON.parse(usuariosGuardados) : [];
+    if (usuariosGuardados) {
+        return JSON.parse(usuariosGuardados);
+    } else {
+        // Agregar usuarios iniciales
+        const usuariosIniciales = [
+            {
+                "nombre": "Juan Pérez",
+                "cedula": "12345678",
+                "email": "juan.perez@example.com",
+                "telefono": "1234567890",
+                "direccion": "Calle Falsa 123",
+                "fechaNacimiento": "1990-01-01",
+                "usuario": "juanp",
+                "contrasena": "1234"
+            },
+            {
+                "nombre": "Ana Gómez",
+                "cedula": "87654321",
+                "email": "ana.gomez@example.com",
+                "telefono": "0987654321",
+                "direccion": "Avenida Siempre Viva 742",
+                "fechaNacimiento": "1992-02-02",
+                "usuario": "anag",
+                "contrasena": "abcd"
+            },
+            {
+                "nombre": "Carlos Ruiz",
+                "cedula": "13579246",
+                "email": "carlos.ruiz@example.com",
+                "telefono": "5555555555",
+                "direccion": "Calle del Sol 456",
+                "fechaNacimiento": "1994-03-03",
+                "usuario": "carlosr",
+                "contrasena": "efgh"
+            }
+        ];
+        // Guardar usuarios iniciales en localStorage
+        localStorage.setItem('usuarios', JSON.stringify(usuariosIniciales));
+        return usuariosIniciales;
+    }
 };
 
 // Guardar usuarios en localStorage
