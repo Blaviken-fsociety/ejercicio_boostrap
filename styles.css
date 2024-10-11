@@ -1,0 +1,15 @@
+body {
+    background-color: #333; /* Cambiar el fondo a #333 */
+    color: white; /* Cambiar el color del texto a blanco */
+}
+h2, p {
+    color: white; /* Asegurarse de que los encabezados y párrafos sean blancos */
+}
+.card {
+    background-color: #444; /* Fondo de las tarjetas */
+}
+
+.card h5 {
+    color: white;
+}
+

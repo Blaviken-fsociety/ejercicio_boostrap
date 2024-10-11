@@ -1,88 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Deadpool Fan Page</title>
+    <!-- Integración de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: #FFFFFF;">
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg" style="background-color: #FFFFFF;">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">Unicosta</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Facultades</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Programas
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Ing. de Sistemas</a></li>
-                          <li><a class="dropdown-item" href="#">Ing. Electrónica</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Otras Opciones...</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                    <a href="login.html" class="btn btn-outline-success">Login</a>
-                  </div>
-                </div>
-              </nav>
-        </header>
-        <div class="row">
-            <div class="col-sm-5 col-md-6 col-lg-3 bg-primary">
-                <p class="text-center px-2"><kbd class="me-2">Lorem </kbd>ipsum dolor sit amet consectetur adipisicing elit. Tempora et consequuntur iure, earum officiis illum delectus aperiam autem facere, quas doloribus sequi ducimus illo quis dignissimos vero? Quia, voluptatem dolorem.</p>
-            </div>
-            <div class="col-sm-3 col-md-6 col-lg-5 bg-warning">
-                <div class="m-3">
-                    <label class="form-label">Usuario:</label>
-                    <input type="email" class="form-control" placeholder="Ingrese su Usuario">
-                    <label class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" placeholder="Ingrese su Contraseña">
-                    <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary mt-3">Ingresar</button>
-                    <button type="button" class="btn btn-outline-danger mt-3">Cancelar</button>
-                    <button type="button" class="btn btn-primary btn-lg mt-3">Ingresar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 d-block d-md-none d-lg-block col-lg-4 bg-success">
-                <img class="img-fluid" src="https://www.cuc.edu.co/wp-content/uploads/2024/03/cropped-Diseno-sin-titulo-53.png" alt="">
-            </div>
+<body>
+
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Deadpool</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <a href="login.html" class="btn btn-outline-dark">Login</a>
+          </form>
         </div>
-        <div class="row">
-            <div class="col-md-6 bg-danger">
-                Elemnto A
-            </div>
-            <div class="col-md-6 bg-secondary p-5">
-                <div class="card" style="width: 18rem;">
-                    <img class="img-fluid" src="https://www.cuc.edu.co/wp-content/uploads/2024/03/cropped-Diseno-sin-titulo-53.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Universidad de la Costa</h5>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur.</p>
-                        <a href="https://www.cuc.edu.co/" class="btn btn-outline-danger">Ver más...</a>
-                    </div>
+      </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Sección "Sobre Deadpool" -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center">Sobre Deadpool</h2>
+        <p title="Hecho por Julio Arellano" class="text-center">Deadpool es un antihéroe ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics. 
+        Conocido por su sentido del humor, su tendencia a romper la cuarta pared, y su capacidad regenerativa.</p>
+    </section>
+
+    <!-- Películas -->
+    <section id="movies" class="container my-5">
+        <h2 class="text-center mb-4">Películas</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/deadpool1.jpg" class="card-img-top" alt="Deadpool 1">
+              <div class="card-body">
+                <h5 class="card-title">Deadpool 1 (2016)</h5>
+                <p class="card-text">La primera entrega de Deadpool, lanzada en 2016.</p><br>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-danger" onclick="window.location.href='https://www.rottentomatoes.com/m/deadpool'">Ver más...</button>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/deadpool2.jpg" class="card-img-top" alt="Deadpool 2">
+              <div class="card-body">
+                <h5 class="card-title">Deadpool 2 (2018)</h5>
+                <p class="card-text">La secuela de Deadpool, lanzada en 2018.</p><br>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-danger" onclick="window.location.href='https://www.rottentomatoes.com/m/deadpool_2'">Ver más...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/Once_Upon_a_Deadpool.jpeg" class="card-img-top" alt="Once Upon a Deadpool">
+              <div class="card-body">
+                <h5 class="card-title">Once Upon a Deadpool (2018)</h5>
+                <p class="card-text">Versión infantil de Deadpool 2.</p><br>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-danger" onclick="window.location.href='https://www.rottentomatoes.com/m/deadpool_and_wolverine'">Ver más...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/deadpool3.jpeg" class="card-img-top" alt="Deadpool 3">
+              <div class="card-body">
+                <h5 class="card-title">Deadpool and Wolverine (2024)</h5>
+                <p class="card-text">La tercera entrega de Deadpool junto a Wolverine.</p>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-danger" onclick="window.location.href='https://www.rottentomatoes.com/m/deadpool_and_wolverine'">Ver más...</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </section>
+
+    <!-- Comics -->
+    <section id="comics" class="container my-5">
+        <h2 class="text-center mb-4">Comics</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/comic1.jpg" class="card-img-top" alt="Comic 1">
+              <div class="card-body">
+                <h5 class="card-title">Deadpool Kills the Marvel Universe (2011) #1</h5>
+                <p class="card-text">What if everything you thought was funny about Deadpool...</p>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-danger" onclick="window.location.href='https://www.marvel.com/comics/issue/41553/deadpool_kills_the_marvel_universe_2011_1'">Ver más...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/comic2.jpg" class="card-img-top" alt="Comic 2">
+              <div class="card-body">
+                <h5 class="card-title">Deadpool Kills the Marvel Universe (2011) #2</h5>
+                <p class="card-text">The Merc with a Mouth takes another turn...</p>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-danger" onclick="window.location.href='https://www.marvel.com/comics/issue/41552/deadpool_kills_the_marvel_universe_2011_2'">Ver más...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/comic3.jpg" class="card-img-top" alt="Comic 3">
+              <div class="card-body">
+                <h5 class="card-title">Deadpool Kills the Marvel Universe (2011) #3</h5>
+                <p class="card-text">What if he decided to kill everyone and everything...</p>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-danger" onclick="window.location.href='https://www.marvel.com/comics/issue/41551/deadpool_kills_the_marvel_universe_2011_3'">Ver más...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/comic4.jpg" class="card-img-top" alt="Comic 4">
+              <div class="card-body">
+                <h5 class="card-title">Deadpool Kills the Marvel Universe (2011) #4</h5>
+                <p class="card-text">El gran final de la serie donde Deadpool hace un cambio radical.</p>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-danger" onclick="window.location.href='https://www.marvel.com/comics/issue/41554/deadpool_kills_the_marvel_universe_2011_4'">Ver más...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-center py-4">
+    <p>&copy; 2024 Unicosta. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Script de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
